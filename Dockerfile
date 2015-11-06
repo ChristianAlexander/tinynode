@@ -1,4 +1,5 @@
 FROM alpine:3.2
+MAINTAINER Christian Alexander <calexanderdev@gmail.com>
 
 ENV VERSION=v4.2.2 NPM_VERSION=2
 
