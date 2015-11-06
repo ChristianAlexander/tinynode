@@ -3,7 +3,7 @@ MAINTAINER Christian Alexander <calexanderdev@gmail.com>
 
 ENV VERSION=v4.2.2 NPM_VERSION=2
 
-RUN apk add --update curl make gcc g++ python linux-headers paxctl libgcc libstdc++ && \
+RUN apk add --update git curl make gcc g++ python linux-headers paxctl libgcc libstdc++ && \
   curl -sSL https://nodejs.org/dist/${VERSION}/node-${VERSION}.tar.gz | tar -xz && \
   cd /node-${VERSION} && \
   ./configure --prefix=/usr && \
